@@ -1,0 +1,193 @@
+:root {
+	--bg-dark: #191724;
+	--bg-overlay: rgba(25, 23, 36, 0.9);
+	--text-main: #e0def4;
+	--text-highlight: #c4a7e7;
+	--accent: #31748f;
+	--header-bg: #9ccfd8;
+	--img-bg: #31748f;
+	--card-bg: #2a273f;
+	--font-large: 2.5rem;
+	--font-medium: 1.5rem;
+	--font-small: 1rem;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: var(--bg-dark);
+	font-size: var(--font-medium);
+}
+
+a {
+	color: #3e8fb0;
+}
+
+
+html,
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: var(--text-main);
+	line-height: 1.6;
+	font-size: 16px;
+	min-height: 100vh;
+	padding: 2rem;
+}
+
+header {
+	padding: 1rem;
+	padding-bottom: 6rem;
+	margin: 1rem;
+}
+
+header h1 {
+	font-size: 42pt;
+	text-align: center;
+	padding-bottom: 1rem;
+
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+h3,
+p {
+	padding: 1rem;
+}
+
+img {
+	height: 200px;
+	box-shadow: black;
+	border-radius: 10px;
+	box-shadow: 5px 5px var(--bg-dark);
+}
+
+section {
+	position: relative;
+	margin: 1rem;
+	padding: 1rem;
+	display: grid;
+	grid-auto-rows: 1fr;
+	gap: 20px 30px;
+	background-color: var(--bg-overlay);
+	grid-template-areas:
+		"Ancient ."
+		"Ancient middle"
+		"babbage middle"
+		"babbage early20th"
+		"turing early20th"
+		"turing colossus"
+		"eniac colossus"
+		"eniac stored"
+		"univac stored"
+		"univac micro"
+		"personal micro"
+		"personal gui"
+		"internet gui"
+		"internet mobile"
+		"cloud mobile"
+		"cloud ai"
+		". ai"
+
+
+
+
+
+}
+
+section>* {
+	background-color: var(--accent);
+	justify-self: center;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+	height: 1fr;
+
+}
+
+section div {
+	padding: 0.7rem;
+	background-color: var(--accent);
+	border-radius: 10px;
+	box-shadow: 5px 5px black;
+
+}
+
+.ancient {
+	grid-area: Ancient;
+
+}
+
+.middle {
+	grid-area: middle;
+}
+
+.babbage {
+	grid-area: babbage;
+}
+
+.early20th {
+	grid-area: early20th;
+}
+
+.turing {
+	grid-area: turing;
+
+}
+
+.colossus {
+	grid-area: colossus;
+}
+
+.eniac {
+	grid-area: eniac;
+}
+
+.stored {
+	grid-area: stored;
+}
+
+.univac {
+	grid-area: univac;
+
+}
+
+.micro {
+	grid-area: micro;
+}
+
+.personal {
+	grid-area: personal;
+}
+
+.gui {
+	grid-area: gui;
+}
+
+.internet {
+	grid-area: internet;
+
+}
+
+.mobile {
+	grid-area: mobile;
+}
+
+.cloud {
+	grid-area: cloud;
+}
+
+.ai {
+	grid-area: ai;
+}
+
+
+
+section>* {
+	background-color: #f8f9fa;
+	align-self: center;
+}
