@@ -66,40 +66,68 @@ img {
 	box-shadow: 5px 5px var(--bg-dark);
 }
 
-section {
-	position: relative;
-	margin: 1rem;
-	padding: 1rem;
-	display: grid;
-	grid-auto-rows: 1fr;
-	gap: 20px 30px;
-	background-color: var(--bg-overlay);
-	grid-template-areas:
-		"Ancient ."
-		"Ancient middle"
-		"babbage middle"
-		"babbage early20th"
-		"turing early20th"
-		"turing colossus"
-		"eniac colossus"
-		"eniac stored"
-		"univac stored"
-		"univac micro"
-		"personal micro"
-		"personal gui"
-		"internet gui"
-		"internet mobile"
-		"cloud mobile"
-		"cloud ai"
-		". ai"
-
-
-
-
-
+@media (min-width: 768px) {
+	#timeline {
+		position: relative;
+		margin: 1rem;
+		padding: 1rem;
+		display: grid;
+		grid-auto-rows: 1fr;
+		gap: 20px 30px;
+		background-color: var(--bg-overlay);
+		grid-template-areas:
+			"Ancient"
+			"middle"
+			"babbage"
+			"early20th"
+			"turing"
+			"colossus"
+			"eniac"
+			"stored"
+			"univac"
+			"micro"
+			"personal"
+			"gui"
+			"internet"
+			"mobile"
+			"cloud"
+			"ai"
+	}
 }
 
-section>* {
+@media (min-width: 1024px) {
+	#timeline {
+		position: relative;
+		margin: 1rem;
+		padding: 1rem;
+		display: grid;
+		grid-auto-rows: 1fr;
+		gap: 20px 30px;
+		background-color: var(--bg-overlay);
+		grid-template-areas:
+			"Ancient ."
+			"Ancient middle"
+			"babbage middle"
+			"babbage early20th"
+			"turing early20th"
+			"turing colossus"
+			"eniac colossus"
+			"eniac stored"
+			"univac stored"
+			"univac micro"
+			"personal micro"
+			"personal gui"
+			"internet gui"
+			"internet mobile"
+			"cloud mobile"
+			"cloud ai"
+			". ai"
+	}
+}
+
+
+
+#timeline>* {
 	background-color: var(--accent);
 	justify-self: center;
 	align-self: center;
@@ -109,7 +137,7 @@ section>* {
 
 }
 
-section div {
+#timeline div {
 	padding: 0.7rem;
 	background-color: var(--accent);
 	border-radius: 10px;
@@ -187,7 +215,10 @@ section div {
 
 
 
-section>* {
+#timeline>* {
 	background-color: #f8f9fa;
 	align-self: center;
 }
+
+
+#people {}
