@@ -15,11 +15,18 @@ added some documentation
 	--header-bg: #9ccfd8;
 	--img-bg: #31748f;
 	--card-bg: #2a273f;
-	--font-large: 2.5rem;
-	--font-medium: 1.5rem;
-	--font-small: 1rem;
+	--font-large: 2rem;
+	--font-medium: 1rem;
+	--font-small: 0.7rem;
 }
 
+@media (min-width: 900px) {
+	:root {
+		--font-large: 2.5rem;
+		--font-medium: 1.5rem;
+		--font-small: 1rem;
+	}
+}
 
 /*____________________________________ CONSTANT STUFF   _______________________________________________*/
 
@@ -46,7 +53,7 @@ body {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	color: var(--text-main);
 	line-height: 1.6;
-	font-size: 16px;
+	font-size: var(--font-medium);
 	min-height: 100vh;
 	padding: 2rem;
 }
@@ -61,7 +68,7 @@ header {
 }
 
 header h1 {
-	font-size: 80pt;
+	font-size: 4rem;
 	text-align: center;
 	padding-bottom: 1rem;
 
@@ -107,16 +114,24 @@ nav button:hover {
 
 
 .homeParagraph {
-	display: flex;
-	flex-direction: column;
+	max-width: 1000px;
+	display: block;
 	background-color: var(--bg-overlay);
 	border-radius: 10px;
 	padding: 1rem;
 	margin: 1rem;
 }
 
-.homeParagraph img {
-	height: 25rem;
+#abacusIMG {
+	height: 18rem;
+	float: right;
+	text-wrap: wrap;
+}
+
+#mapIMG {
+	height: 15rem;
+	float: right;
+	text-wrap: wrap;
 }
 
 .homeParagraph video {
@@ -127,7 +142,7 @@ nav button:hover {
 @media (min-width: 900px) {
 
 	.homeParagraph {
-		display: flex;
+		display: block;
 		flex-direction: row;
 		background-color: var(--bg-overlay);
 		border-radius: 10px;
@@ -135,9 +150,6 @@ nav button:hover {
 		margin: 1rem;
 	}
 
-	.homeParagraph img {
-		height: 25rem;
-	}
 
 	.homeParagraph video {
 		height: 20rem;
@@ -160,10 +172,10 @@ img {
 
 /* smaller layout for timeline */
 #timeline {
-	max-width: 1700px;
+	max-width: 1500px;
 	position: relative;
-	margin: 1rem auto;
-	padding: 1rem;
+	margin: 0.1rem auto;
+	padding: 0.1rem;
 	display: none;
 	grid-auto-rows: 1fr;
 	gap: 20px 30px;
@@ -222,11 +234,10 @@ img {
 
 
 /* color timeline secitons and add a haver effect */
-
 #timeline div {
 	text-align: center;
 	align-items: center;
-	padding: 0.7rem;
+	padding: 0.3rem;
 	background-color: var(--bg-overlay);
 	border-radius: 10px;
 	transition: all 0.3s ease;
@@ -239,6 +250,28 @@ img {
 	background-color: var(--bg-overlay_solid);
 	border-radius: 10px;
 	box-shadow: 0 0 10px black;
+}
+
+
+@media (min-width: 900px) {
+
+	#timeline div {
+		text-align: center;
+		align-items: center;
+		padding: 0.7rem;
+		background-color: var(--bg-overlay);
+		border-radius: 10px;
+		transition: all 0.3s ease;
+	}
+
+	#timeline div:hover {
+		text-align: center;
+		align-items: center;
+		padding: 1.0rem;
+		background-color: var(--bg-overlay_solid);
+		border-radius: 10px;
+		box-shadow: 0 0 10px black;
+	}
 }
 
 /* decleare all the grid area stuff */
@@ -313,35 +346,72 @@ img {
 /*____________________________________ TIMELINE STUFF END _______________________________________________*/
 
 /*____________________________________ Signifigant people styles_______________________________________________*/
-
 #people {
-	display: none;
+	display: grid;
 	grid-template-columns: 1fr;
-	max-width: 1500px;
-	margin: 2rem auto;
-	padding: 1rem 2rem;
+	max-width: 1000px;
+	margin: 0.2rem auto;
+	padding: 0.1rem 2rem;
 	line-height: 1.6;
 	background-color: var(--bg-overlay);
 	border-radius: 8px;
 }
 
 #people>h1 {
-	font-size: 2.5rem;
+	font-size: var(--font-large);
 	text-align: center;
-	margin-bottom: 1.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .person {
-	display: flex;
+	display: block;
 	border-bottom: 1px solid #ddd;
-	padding: 2rem;
-	margin: 2rem;
+	padding: 0.2rem;
+	margin: 0.2rem;
 }
 
 .person figcaption {
-	font-size: 10pt;
+	font-size: var(--font-small);
 }
 
 .person:last-child {
 	border-bottom: none;
+}
+
+
+
+@media (min-width: 900px) {
+
+	#people {
+		display: none;
+		grid-template-columns: 1fr;
+		max-width: 1500px;
+		margin: 2rem auto;
+		padding: 1rem 2rem;
+		line-height: 1.6;
+		background-color: var(--bg-overlay);
+		border-radius: 8px;
+	}
+
+	#people>h1 {
+		font-size: 2.5rem;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	.person {
+		display: flex;
+		border-bottom: 1px solid #ddd;
+		padding: 2rem;
+		margin: 2rem;
+	}
+
+	.person figcaption {
+		font-size: 10pt;
+	}
+
+	.person:last-child {
+		border-bottom: none;
+	}
+
 }
