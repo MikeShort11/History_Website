@@ -10,12 +10,12 @@ increases font size
 	--bg-overlay_solid: rgba(0, 0, 0, 1);
 	--text-main: #ffffff;
 	--text-highlight: #cccccc;
-	--accent: #ffffff;
+	--accent: #333333;
 	--header-bg: #1a1a1a;
 	--img-bg: #000000;
 	--card-bg: #1a1a1a;
-	--font-large: 2.5rem;
-	--font-medium: 1.5rem;
+	--font-large: 2.0rem;
+	--font-medium: 1.2rem;
 	--font-small: 1rem;
 
 }
@@ -30,18 +30,6 @@ increases font size
 
 /*____________________________________ CONSTANT STUFF   _______________________________________________*/
 
-/*css reset */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
-	font-size: var(--font-medium);
-}
-
-a {
-	color: #3e8fb0;
-}
 
 html {
 	background-color: #26233a;
@@ -58,95 +46,6 @@ body {
 	padding: 2rem;
 }
 
-header {
-	max-width: 1500px;
-	background-color: var(--bg-overlay);
-	border-radius: 10px;
-	padding: 1rem;
-	padding-bottom: 6rem;
-	margin: 1rem auto;
-}
-
-header h1 {
-	font-size: 80pt;
-	text-align: center;
-	padding-bottom: 1rem;
-
-}
-
-nav {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-nav button {
-	color: var(--text-main);
-	background-color: var(--bg-overlay);
-	border: none;
-	border-radius: 10px;
-	padding: 0.5rem;
-}
-
-nav button:hover {
-	color: var(--text-main);
-	background-color: var(--bg-dark);
-	border: none;
-	border-radius: 10px;
-	padding: 0.6rem;
-	box-shadow: 0 0 10px black;
-}
-
-
-/*____________________________________ HOME STUFF _______________________________________________*/
-
-#home {
-	max-width: 1500px;
-	margin: 1rem auto;
-}
-
-.homeIntro {
-	background-color: var(--bg-overlay);
-	border-radius: 10px;
-	padding: 1rem;
-	margin: 1rem;
-
-}
-
-
-.homeParagraph {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--bg-overlay);
-	border-radius: 10px;
-	padding: 1rem;
-	margin: 1rem;
-}
-
-.homeParagraph img {
-	height: 20rem;
-	width: 30rem;
-
-}
-
-.homeParagraph video {
-	height: 20rem;
-	width: 40rem;
-}
-
-
-
-/*____________________________________ TIMELINE STUFF _______________________________________________*/
-h3,
-p {
-	padding: 1rem;
-}
-
-img {
-	height: 200px;
-	box-shadow: black;
-	border-radius: 10px;
-	border: solid var(--bg-dark)
-}
 
 
 /* smaller layout for timeline */
@@ -178,15 +77,6 @@ img {
 }
 
 
-/* color timeline secitons and add a haver effect */
-
-#timeline div {
-	text-align: left;
-	align-items: left;
-	padding: 0.7rem;
-	background-color: var(--bg-overlay);
-	border-radius: 10px;
-}
 
 /* decleare all the grid area stuff */
 .ancient {
@@ -258,37 +148,3 @@ img {
 }
 
 /*____________________________________ TIMELINE STUFF END _______________________________________________*/
-
-/*____________________________________ Signifigant people styles_______________________________________________*/
-
-#people {
-	display: none;
-	grid-template-columns: 1fr;
-	max-width: 1500px;
-	margin: 2rem auto;
-	padding: 1rem 2rem;
-	line-height: 1.6;
-	background-color: var(--bg-overlay);
-	border-radius: 8px;
-}
-
-#people>h1 {
-	font-size: 2.5rem;
-	text-align: center;
-	margin-bottom: 1.5rem;
-}
-
-.person {
-	display: flex;
-	border-bottom: 1px solid #ddd;
-	padding: 2rem;
-	margin: 2rem;
-}
-
-.person figcaption {
-	font-size: 10pt;
-}
-
-.person:last-child {
-	border-bottom: none;
-}
