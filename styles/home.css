@@ -1,0 +1,56 @@
+#home {
+	max-width: 1500px;
+	margin: 1rem auto;
+}
+
+.homeIntro {
+	background-color: var(--bg-overlay);
+	border-radius: 10px;
+	padding: 1rem;
+	margin: 1rem;
+
+}
+
+
+.homeParagraph {
+	max-width: 1500px;
+	display: block;
+	background-color: var(--bg-overlay);
+	border-radius: 10px;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+#abacusIMG {
+	height: 18rem;
+	float: right;
+	text-wrap: wrap;
+}
+
+#mapIMG {
+	height: 15rem;
+	float: right;
+	text-wrap: wrap;
+}
+
+.homeParagraph video {
+	height: 20rem;
+}
+
+
+@media (min-width: 900px) {
+
+	.homeParagraph {
+		display: block;
+		flex-direction: row;
+		background-color: var(--bg-overlay);
+		border-radius: 10px;
+		padding: 1rem;
+		margin: 1rem;
+	}
+
+
+	.homeParagraph video {
+		height: 20rem;
+	}
+}

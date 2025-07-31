@@ -7,6 +7,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>History of Computing</title>
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/timeline.css">
+	<link rel="stylesheet" href="styles/home.css">
+	<link rel="stylesheet" href="styles/people.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -17,6 +20,7 @@
 			<button onclick="showSection('home')">Home</button>
 			<button onclick="showSection('timeline')">Timeline</button>
 			<button onclick="showSection('people')">Signifigant People</button>
+			<button onclick="showSection('form')">Visitor Form</button>
 			<button id="themeToggle">Dyslexia mode</button>
 
 		</nav>
@@ -418,6 +422,86 @@
 		</div>
 
 	</section>
+	<container class="form">
+		<h1>Visitor Form</h1>
+		<div id-"success" class="successMsg" style="display:none">
+			Thank you for logging your visit!
+		</div>
+		<form id="myform" novalidate method="GET" action="https://wp.zybooks.com/form-viewer.php">
+			<ul class="flex">
+				<li class="section-display">
+					<label for="first-name">First Name</label>
+					<input type="text" id="first-name" name="first-name"
+						placeholder="Enter your first name here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="last-name">Last Name</label>
+					<input type="text" id="last-name" name="last-name"
+						placeholder="Enter your last name here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="address">Address</label>
+					<input type="text" id="address" name="address"
+						placeholder="Enter your address here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" placeholder="Enter your city here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="state">State</label>
+					<input type="text" id="state" name="state" placeholder="Enter your state here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="zip">Zip</label>
+					<input type="text" id="zip" name="zip" placeholder="Enter your zip code here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" placeholder="Enter your email here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<label for="phone">Phone</label>
+					<input type="text" id="phone" placeholder="Enter your phone here">
+					<div class="errorMsg"></div>
+				</li>
+				<li>
+					<h2>How did you find my page</h2>
+				</li>
+				<li>
+					<input type="checkbox" id='google' name='find-page' value="google">
+					<label for="google">Google Search</label>
+				</li>
+				<li>
+					<input type="checkbox" id='friend' name='find-page' value="friend">
+					<label for="friend">Friend</label>
+				</li>
+				<li>
+					<input type="checkbox" id='newspaper' name='find-page' value="newspaper">
+
+					<label for="newspaper">News Paper</label>
+					<div class="errorMsg"></div>
+				</li>
+
+				<li>
+					<label for="comment">Comments</label>
+					<textarea rows="4" id="comment"
+						placeholder="Enter your comments here"></textarea>
+				</li>
+
+				<li>
+					<button type="submit">Send</button>
+				</li>
+			</ul>
+		</form>
+	</container>
 
 	<footer id="contact">
 		<h3>Contact Me</h3>
@@ -426,6 +510,8 @@
 	</footer>
 	<script src="/scripts/script.js"></script>
 	<script src="/scripts/theme.js"></script>
+	<script defer src="/scripts/validation.js"></script>
+
 
 </body>
 

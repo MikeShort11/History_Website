@@ -1,0 +1,185 @@
+h3,
+p {
+	padding: 1rem;
+}
+
+img {
+	height: 200px;
+	box-shadow: black;
+	border-radius: 10px;
+	border: solid var(--bg-dark)
+}
+
+
+/* smaller layout for timeline */
+#timeline {
+	max-width: 1500px;
+	position: relative;
+	margin: 0.1rem auto;
+	padding: 0.1rem;
+	display: none;
+	grid-auto-rows: 1fr;
+	gap: 20px 30px;
+	grid-template-areas:
+		"Ancient"
+		"middle"
+		"babbage"
+		"early20th"
+		"turing"
+		"colossus"
+		"eniac"
+		"stored"
+		"univac"
+		"micro"
+		"personal"
+		"gui"
+		"internet"
+		"mobile"
+		"cloud"
+		"ai"
+}
+
+
+
+@media (min-width: 900px) {
+	#timeline {
+		max-width: 1700px;
+		position: relative;
+		margin: 1rem auto;
+		padding: 1rem;
+		display: none;
+		grid-auto-rows: 1fr;
+		gap: 20px 30px;
+		grid-template-areas:
+			"Ancient ."
+			"Ancient middle"
+			"babbage middle"
+			"babbage early20th"
+			"turing early20th"
+			"turing colossus"
+			"eniac colossus"
+			"eniac stored"
+			"univac stored"
+			"univac micro"
+			"personal micro"
+			"personal gui"
+			"internet gui"
+			"internet mobile"
+			"cloud mobile"
+			"cloud ai"
+			". ai"
+	}
+}
+
+
+
+
+/* color timeline secitons and add a haver effect */
+#timeline div {
+	text-align: center;
+	align-items: center;
+	padding: 0.3rem;
+	background-color: var(--bg-overlay);
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+#timeline div:hover {
+	text-align: center;
+	align-items: center;
+	padding: 1.0rem;
+	background-color: var(--bg-overlay_solid);
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+}
+
+
+@media (min-width: 900px) {
+
+	#timeline div {
+		text-align: center;
+		align-items: center;
+		padding: 0.7rem;
+		background-color: var(--bg-overlay);
+		border-radius: 10px;
+		transition: all 0.3s ease;
+	}
+
+	#timeline div:hover {
+		text-align: center;
+		align-items: center;
+		padding: 1.0rem;
+		background-color: var(--bg-overlay_solid);
+		border-radius: 10px;
+		box-shadow: 0 0 10px black;
+	}
+}
+
+/* decleare all the grid area stuff */
+.ancient {
+	grid-area: Ancient;
+
+}
+
+.middle {
+	grid-area: middle;
+}
+
+.babbage {
+	grid-area: babbage;
+}
+
+.early20th {
+	grid-area: early20th;
+}
+
+.turing {
+	grid-area: turing;
+
+}
+
+.colossus {
+	grid-area: colossus;
+}
+
+.eniac {
+	grid-area: eniac;
+}
+
+.stored {
+	grid-area: stored;
+}
+
+.univac {
+	grid-area: univac;
+
+}
+
+.micro {
+	grid-area: micro;
+}
+
+.personal {
+	grid-area: personal;
+}
+
+.gui {
+	grid-area: gui;
+}
+
+.internet {
+	grid-area: internet;
+
+}
+
+.mobile {
+	grid-area: mobile;
+}
+
+.cloud {
+	grid-area: cloud;
+}
+
+.ai {
+	grid-area: ai;
+}

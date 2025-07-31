@@ -7,3 +7,7 @@ function showSection(sectionId) {
 	document.getElementById(sectionId).style.display = 'grid';
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+	initValidation("myform");
+});
