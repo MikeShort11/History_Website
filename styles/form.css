@@ -1,0 +1,66 @@
+.form {
+	border-radius: 10px;
+	padding: 2rem;
+	margin: 2rem auto;
+	max-width: 800px;
+}
+
+.form h1 {
+	color: var(--text-highlight);
+	margin-bottom: 2rem;
+}
+
+.successMsg {
+	background-color: var(--accent);
+	color: var(--text-main);
+	padding: 1rem;
+	margin-bottom: 2rem;
+	border-radius: 8px;
+}
+
+.flex li {
+	margin-bottom: 1.5rem;
+}
+
+.flex label {
+	color: var(--text-highlight);
+	margin-bottom: 0.5rem;
+}
+
+.flex input[type="text"],
+.flex textarea {
+	background-color: var(--card-bg);
+	color: var(--text-main);
+	border: 2px solid var(--bg-dark);
+	border-radius: 8px;
+	padding: 0.75rem;
+}
+
+
+.flex h2 {
+	color: var(--text-highlight);
+	margin: 2rem 0 1rem 0;
+}
+
+.flex input[type="checkbox"] {
+	accent-color: var(--accent);
+	margin-right: 0.5rem;
+}
+
+.flex button[type="submit"] {
+	background-color: var(--accent);
+	color: var(--text-main);
+	border: none;
+	border-radius: 10px;
+	padding: 1rem 2rem;
+	margin-top: 1rem;
+}
+
+.flex button[type="submit"]:hover {
+	background-color: var(--text-highlight);
+}
+
+.errorMsg {
+	color: #e74c3c;
+	margin-top: 0.5rem;
+}
